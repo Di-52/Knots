@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/navigation_education">
+
+    <fragment
+        android:id="@+id/navigation_education"
+        android:name="com.demitrist.knotsapp.education.presentation.EducationFragment"
+        android:label="Edu"
+        tools:layout="@layout/fragment_education">
+        <action
+            android:id="@+id/action_navigation_education_to_navigation_examination4"
+            app:destination="@id/navigation_examination" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_examination"
+        android:name="com.demitrist.knotsapp.examination.presentation.ExaminationFragment"
+        android:label="Exa"
+        tools:layout="@layout/fragment_examination"
+        >
+        <action
+            android:id="@+id/action_navigation_examination_to_navigation_education4"
+            app:destination="@id/navigation_education" />
+    </fragment>
+
+</navigation>
