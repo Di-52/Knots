@@ -2,12 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_education"
-        android:icon="@drawable/ic_launcher_background"
-        android:title="education"
+        android:icon="@drawable/edu_image"
+        android:title="Learn"
+        android:iconTint="@color/grey_200"
+
         />
     <item
         android:id="@+id/navigation_examination"
-        android:icon="@drawable/ic_launcher_background"
-        android:title="examination"
+        android:icon="@drawable/exam_image"
+        android:title="Test"
+        android:iconTint="@color/grey_200"
+        android:iconTintMode="multiply"
         />
 </menu>
