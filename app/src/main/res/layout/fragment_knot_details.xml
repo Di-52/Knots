@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/knot_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Австрийский проводник"
+        android:fontFamily="@font/jost_regular"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/knot_image_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/grey_100"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/knot_name_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:id="@id/knot_image_iv"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/logo1"
+                android:layout_margin="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:text="dfjghjslghfdsjkdfhgs\n
+        hjdhg kjfhdkjs hkjghjkh\n
+        jhsdfjg sfdhg jksh gjksh\n
+        gdfshj gjk shfgdjkg hsjk hd\n
+dfjghjslghfdsjfhgs\n
+        hjdhg kjfhdkjs hkjghjkh\n
+        jhsdfjg sfdhg jksh gjksh\n
+        gdfshj gjk shfgdjkg hsjk hd\n
+dfjghjslghfdsjkdfhgs\n
+        hjdhg kjfhdkjs hkjghjkh\n
+        jhsdfjg sfdhg jksh gjksh\n
+        gdfshj gjk shfgdjkg hsjk hd\n"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/knot_image_cv"
+        style="@style/regular_text_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
