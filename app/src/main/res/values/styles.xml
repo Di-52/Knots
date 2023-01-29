@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="header_text">
+        <item name="android:fontFamily">@font/jost_regular</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:lineSpacingExtra">-20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/grey_300</item>
+    </style>
+
+    <style name="regular_text">
+        <item name="android:fontFamily">@font/jost_regular</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:lineSpacingExtra">-10dp</item>
+        <item name="android:textColor">@color/grey_200</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="header_text_2">
+        <item name="android:fontFamily">@font/jost_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="regular_text_2">
+        <item name="android:fontFamily">@font/jost_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">start</item>
+    </style>
+</resources>
